@@ -1,4 +1,5 @@
 const words = [];
+
 function addWord() {
   let word = document.getElementById("wordInsert").value;
   words.push(word);
@@ -6,6 +7,7 @@ function addWord() {
   list.appendChild(document.createTextNode(word));
   document.querySelector("ul").appendChild(list);
 }
+
 function find() {
   let searchedWord = document.getElementById("search").value;
   let exist = 0;
